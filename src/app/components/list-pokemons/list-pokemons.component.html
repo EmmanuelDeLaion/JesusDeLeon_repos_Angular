@@ -1,0 +1,51 @@
+<h1 class="title-list">Listado de Pokemon</h1>
+
+<div class="d-flex">
+
+  <div class="form-search" action="">
+    <button (click)="getPokemonId(inputSearch)" class="button-search"><img class="icon"
+        src="../assets/images/icons/search-icono.png" alt=""></button>
+    <input #search [(ngModel)]="inputSearch" type="text" placeholder="Buscar">
+  </div>
+
+  <button (click)="selectAction()" class="button-primary">
+    <img class="icon" src="../assets/images/icons/add-icono.png" alt="">
+    Nuevo
+  </button>
+
+</div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Imagen</th>
+      <th>Ataque</th>
+      <th>Defensa</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let pokemon of pokemons">
+      <td>{{pokemon.name}}</td>
+      <td class="c-imagen">
+        <img class="img-pokemon" src="{{pokemon.image}}" alt="Imagen">
+      </td>
+      <td>{{pokemon.attack}}</td>
+      <td>{{pokemon.defense}}</td>
+      <td>
+        <div class="buttons-table">
+          <button (click)="selectedPokemon(pokemon.id)" class="button-table"><img class="icon-table" src="../assets/images/icons/edit-icono.png"
+              alt=""></button>
+          <button (click)="deletePokemonID(pokemon.id)" class="button-table"><img class="icon-table" src="../assets/images/icons/delete-icono.png"
+              alt=""></button>
+        </div>
+      </td>
+    </tr>
+
+  </tbody>
+
+</table>

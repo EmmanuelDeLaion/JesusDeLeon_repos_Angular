@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --base-color: #6457F6;
+  --base-color-light: #D1CDFB;
+  --error-color: #E62F2F;
+  --navbar-color: #9DADBA;
+  --color-white: #fff;
+  --black-color-light: #DDDEE0;
+  // titulos
+  --titles-table: #333A40;
+  --titles-light: #686C6F;
+}
+
+
+body{
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-image: url("/assets/images/fondo-img.png");
+}
+
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.title-list{
+  color: var(--titles-light);
+  font-size: 25px;
+}
+
+.title-form{
+  color: var(--titles-light);
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+// buttons
+.button-primary{
+  background-color: var(--base-color);
+  border-radius: 5px;
+  color: var(--color-white);
+  min-width: 100px;
+  padding: 10px 15px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.20s;
+  transform: scale(1);
+
+  &:hover{
+    background-color: var(--titles-table);
+    transform: scale(1.05);
+  }
+
+}
+
+
+.icon{
+  width: 12px;
+}
+
+// utilities
+.m-1{
+  margin: 10px;
+}
+
+.m-2{
+  margin: 20px;
+}
+
+
+.m-5{
+  margin: 50px;
+}
+

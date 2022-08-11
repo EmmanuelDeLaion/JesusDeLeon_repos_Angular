@@ -1,0 +1,125 @@
+.d-flex{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-search{
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  height: 45px;
+  border: 2px solid var(--black-color-light);
+  border-radius: 5px;
+
+  .button-search{
+    position: relative;
+    height: 100%;
+    width: 50px;
+    background-color: var(--color-white);
+    border: none;
+    cursor: pointer;
+  }
+
+  input{
+    position: relative;
+    height: 87%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--titles-table);
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+}
+
+
+table {
+  position: relative;
+  border-spacing: 1;
+  border-collapse: collapse;
+  background-color: var(--color-white);
+  min-width: 900px;
+  margin:10px auto;
+
+  td,th{
+    padding-left:20px;
+    border: 1px solid var(--black-color-light);
+  }
+
+  th{
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--titles-table);
+    text-align: center;
+  }
+
+  thead tr{
+    height:50px;
+    background: #fff;
+    font-size:16px;
+    border: 2px solid var(--black-color-light);
+  }
+
+  tbody tr{
+    height:48px;
+    &:last-child{
+      border:0;
+    }
+  }
+
+ 	td{
+    text-align:left;
+    font-weight: bold;
+    color: var(--titles-light);
+	}
+
+  .c-imagen, .buttons-table{
+    position: relative;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+.button-table{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  border-radius: 100%;
+  background-color: var(--color-white);
+  cursor: pointer;
+  border: 2px solid var(--color-white);
+  transition: all 0.2s;
+
+  &:hover{
+    border: 2px solid var(--base-color);
+  }
+
+}
+
+.icon-table{
+  width: 20px;
+}
+
+.img-pokemon{
+  background-color: var(--color-white);
+  width: 40px;
+}
+
+
+

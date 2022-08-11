@@ -1,0 +1,40 @@
+.screen{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #333a40a5;
+}
+
+.container-popup{
+  position: absolute;
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-msg{
+  position: relative;
+  padding: 20px;
+  min-width: 400px;
+  min-height: 300px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
